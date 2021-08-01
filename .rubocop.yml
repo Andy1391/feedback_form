@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:  
+    - 'config/*'
+    - 'Gemfile'
+    - 'spec/*'
+
+  TargetRubyVersion: 2.6.1
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+  
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength: 
+  Max: 40

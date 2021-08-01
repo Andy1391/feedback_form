@@ -1,0 +1,16 @@
+source 'https://rubygems.org'
+
+ruby '2.6.1'
+
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'sinatra-flash'
+gem 'recaptcha'
+gem 'pony'
+gem 'haml'
+gem 'sinatra-param'
+gem 'require_all'
+gem 'yaml'
+gem 'dotenv'
+gem 'rubocop'
+gem 'rspec'
