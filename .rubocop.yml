@@ -2,7 +2,7 @@ AllCops:
   Exclude:  
     - 'config/*'
     - 'Gemfile'
-    - 'spec/*'
+    - 'spec/*/*'
 
   TargetRubyVersion: 2.6.1
 

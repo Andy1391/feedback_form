@@ -1,18 +1,17 @@
-%h1 Feedback Form
+.form
+  %h2 Feedback Form
 
-%form{ :action => "/form", :method => "POST", :enctype=>"multipart/form-data" }
-  %p
-    name:
-    %input{:name => "name", :type => "text", :maxlength => "250"}/
-  %p
-    email:
-    %input{:name => "email", :type => "email"}
-  %p
-    message:
-    %textarea{:name => "message", :cols => "30", :rows => "2", :minlength => "5", :required =>"true"}
-  %p
-    Add file:
-    %input{:type=>"file", :name=>"image"}
-  %p
-    %button.button Send
-  = recaptcha_tags
+  %form.form-horizontal{ :action => "/form", :method => "POST", :enctype=>"multipart/form-data" }
+    .control-group     
+      .controls
+        %input#inputEmail{:placeholder => "Name", :name => "name", :type => "text", :minlength => "3", :maxlength => "250"}
+    .control-group      
+      .controls
+        %input#inputEmail{:placeholder => "Email", :name => "email", :type => "email"}
+    .control-group      
+      .controls
+        %textarea{:placeholder => "Message", :name => "message", :cols => "100", :rows => "10", :minlength => "50", :required =>"true"}
+    .add_file
+      %input{:type=>"file", :name=>"image"}    
+    = recaptcha_tags
+    %button.btn.btn-primary Send

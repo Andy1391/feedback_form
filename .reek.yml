@@ -1,0 +1,5 @@
+exclude_paths:
+  - spec/
+detectors:  
+  IrresponsibleModule:
+    enabled: false

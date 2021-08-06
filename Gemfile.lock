@@ -8,6 +8,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     json (2.5.1)
+    kwalify (0.7.2)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     mini_mime (1.1.0)
@@ -19,12 +20,20 @@ GEM
       ast (~> 2.4.1)
     pony (1.13.1)
       mail (>= 2.0)
+    psych (4.0.1)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rainbow (3.0.0)
     recaptcha (5.8.1)
       json
+    reek (6.0.5)
+      kwalify (~> 0.7.0)
+      parser (~> 3.0.0)
+      psych (>= 3.1, < 5.0)
+      rainbow (>= 2.0, < 4.0)
     regexp_parser (2.1.1)
     require_all (3.0.0)
     rexml (3.2.5)
@@ -81,7 +90,9 @@ DEPENDENCIES
   dotenv
   haml
   pony
+  rack-test
   recaptcha
+  reek
   require_all
   rspec
   rubocop

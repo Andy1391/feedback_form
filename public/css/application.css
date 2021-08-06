@@ -1,0 +1,22 @@
+.form {
+  text-align: center;
+}
+
+.g-recaptcha {
+  display: inline-block;
+}
+
+.control-group { 
+  width: 1648px;
+}
+
+.add_file {
+  width: 1890px;
+}
+
+.btn.btn-primary {
+   position: absolute; 
+   bottom: 420px;
+   left: 870px;    
+   width: 100px; 
+}

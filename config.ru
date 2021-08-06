@@ -9,4 +9,4 @@ require 'haml'
 require 'yaml'
 
 run ApplicationController
-use FormController
+# use FormController
