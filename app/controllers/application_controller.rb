@@ -32,8 +32,8 @@ class ApplicationController < Sinatra::Base
         file = params[:image][:tempfile]
         path = "./public/uploads/#{filename}"
 
-        File.open(path, 'w+') do |file|
-          file.write(file.read)
+        File.open(path, 'w+') do |cur_file|
+          cur_file.write(file.read)
         end
 
         Pony.mail({
