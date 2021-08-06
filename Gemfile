@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.1'
+ruby '3.0.0'
 
 gem 'sinatra'
 gem 'sinatra-contrib'
@@ -15,4 +15,6 @@ gem 'dotenv'
 gem 'rubocop'
 gem 'rspec'
 gem 'rack-test'
-gem 'reek'
+# gem 'reek'
+
+gem "webrick", "~> 1.7"
